@@ -1,13 +1,6 @@
-usuario_nasc = int(input('Qual o ano do seu nascimento?'))
-ano_atual = 2026
+from modules.eleitoral import verificar_voto
 
-calculo = ano_atual - usuario_nasc
+ano_nasc = int(input('Qual o ano do seu nascimento? '))
 
-print(f'hoje você tem {calculo} anos')
-
-idade_votar = 16
-
-if calculo >= idade_votar:
-    print('pode votar')
-else:
-    print('ainda não pode votar')
+apto, resultado = verificar_voto(ano_nasc)
+print(resultado)
