@@ -1,31 +1,27 @@
-# VotaDev 🗳️
+# 🗳️ PossoVotar
 
-O **VotaDev** é uma aplicação em Python desenvolvida para validar a elegibilidade eleitoral de um cidadão com base no seu ano de nascimento. O projeto nasceu como um desafio prático para consolidar conceitos de lógica de programação, manipulação de bibliotecas nativas, tratamento de erros e versionamento com Git/GitHub.
+O **PossoVotar** é uma ferramenta web de utilidade pública desenvolvida em Python. O objetivo do projeto é facilitar o acesso a informações eleitorais básicas e, futuramente, atuar como um aliado no combate à desinformação durante o período eleitoral.
 
----
-
-## 🚀 Status do Projeto & Roadmap
-
-Atualmente, o projeto está na **Fase 1 (Versão de Terminal)**. O planejamento de evolução da aplicação está dividido nas seguintes etapas:
-
-- [x] **Fase 1 (CLI):** Lógica principal via terminal, automação de data e tratamento de exceções.
-- [ ] **Fase 2 (Web/Interface):** Criação de uma interface gráfica para o usuário utilizando **Flask** (HTML/CSS).
-- [ ] **Fase 3 (Autenticação & Dados):** Implementação de sistema de **Login** para usuários e integração com **Banco de Dados** para salvar o histórico de consultas.
+O projeto foi projetado para ser leve, direto e **focado na privacidade do usuário**, operando sem a necessidade de criação de contas, logins ou armazenamento de dados pessoais.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas (Fase Inicial)
+## 🎯 Funcionalidades
 
-- **Python 3.14+** (Lógica de negócios)
-- **Módulo `datetime`** (Para captura dinâmica do ano atual)
-- **Git & GitHub** (Controle de versão e gerenciamento de tarefas via GitHub Projects)
+### 🔹 Fase 1: Assistente Eleitoral (Em Desenvolvimento)
+*   **Verificação de Elegibilidade:** O usuário insere sua idade ou ano de nascimento para saber se já pode votar e se o seu voto é facultativo ou obrigatório (com base nas regras do TSE).
+*   **Central de Links Úteis:** Caso o usuário tenha idade para votar e ainda não possua o título, a plataforma direciona-o com links oficiais e instruções para o serviço *TítuloNet* e outros portais do Tribunal Superior Eleitoral.
+
+### 🔹 Fase 2: Checador de Mídias com IA (Planejado)
+*   **Análise de Autenticidade:** Implementação de um módulo de Inteligência Artificial para analisar arquivos de áudio ou vídeo enviados pelos usuários.
+*   **Combate a Deepfakes:** A IA avaliará indícios de manipulação digital (Deepfakes ou clonagem de voz) para ajudar o cidadão a identificar se uma mídia é real ou falsa.
 
 ---
 
-## 🎯 Funcionalidades Atuais
+## 🛠️ Tecnologias Planejadas
 
-- **Cálculo Dinâmico:** Calcula a idade exata do usuário sem depender de um ano fixado no código (sempre atualizado).
-- **Tratamento de Erros (_Bulletproof_):** Proteção contra entradas inválidas utilizando blocos `try/except` (o programa não quebra se o usuário digitar letras ou caracteres especiais).
-- **Validação Eleitoral:** Informa se o voto é proibido (menor de 16 anos), opcional (16, 17 ou acima de 70 anos) ou obrigatório (entre 18 e 70 anos).
+*   **Linguagem:** Python 3
+*   **Interface Web:** Streamlit (ou framework similar para interfaces rápidas e limpas)
+*   **Processamento de IA (Futuro):** Bibliotecas de Machine Learning / Deep Learning para análise de mídia e áudio.
 
 ---
